@@ -1,0 +1,16 @@
+@import './base/reset';
+@import './settings/color';
+@import'./settings/font';
+
+body {
+  margin: 0;
+  font-family: $font-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
