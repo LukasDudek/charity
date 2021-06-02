@@ -1,0 +1,42 @@
+.navigation-box{
+  width: 683px;
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 9px 0px 9px 0px;
+  margin-top: 37px;
+  align-self: flex-end;
+  margin-right: 142px;
+  .login-box{
+    text-align:end;
+    a{
+      color: $font-second-color;
+      text-decoration: none;
+      margin-left: 10px;
+      font-family: $font-base;
+      font-size: 14px;
+      padding: 9px 10px;
+    }
+  }
+  .main-navigation-box{
+    text-align:center;
+    display: flex;
+    justify-content: space-between;
+    a{
+      font-family: $font-base;
+      color: $font-color;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 24px;
+      padding: 9px 20px;
+      &:hover{
+        border: 0.75px solid $font-color;
+      }
+      &:focus{
+        border: 0.75px solid $font-color;
+      }
+    }
+  }
+}
+
