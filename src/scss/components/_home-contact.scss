@@ -1,0 +1,30 @@
+.home-contact-container{
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  height: 1026px;
+  .background-opacity{
+    position: absolute;
+    background-image: url(../../assets/Background-Contact-Form.jpg);
+    background-repeat: no-repeat;
+    height: 1026px;
+    opacity: 0.2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    // z-index: 0;
+  }
+  .form-container{
+    margin-right: 140px;
+    display: flex;
+    flex-direction: column;
+    // z-index: 1;
+    form{
+      display: flex;
+      flex-direction: column;
+    }
+  
+  }
+}

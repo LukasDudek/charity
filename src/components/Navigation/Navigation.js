@@ -6,8 +6,8 @@ const Navigation= () => {
   return <>
   <nav className='navigation-box'>
     <div className='login-box'>
-      <Link> Zaloguj </Link>
-      <Link> Załóż konto </Link>
+      <Link to={'/logIn'}> Zaloguj </Link>
+      <Link to={'/register'}> Załóż konto </Link>
     </div>
     <div className='main-navigation-box'> 
       <Link to={'/#'} > Start </Link>

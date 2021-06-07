@@ -9,7 +9,6 @@ import HomeContact from '../HomeConatct';
 const Home = () => {
   
   return<>
-  <h1> Hello Home</h1>
   <HomeHeader/>
   <HomeThreeColumns/>
   <HomeSimpleSteps/>

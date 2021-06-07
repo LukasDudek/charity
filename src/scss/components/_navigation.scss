@@ -17,6 +17,12 @@
       font-family: $font-base;
       font-size: 14px;
       padding: 9px 10px;
+      &:hover{
+        border: 0.75px solid $yellow-color;
+      }
+      &:focus{
+        border: 0.75px solid $yellow-color;
+      }
     }
   }
   .main-navigation-box{
