@@ -8,14 +8,16 @@ import HomeContact from '../HomeConatct';
 
 const Home = () => {
   
-  return<>
-  <HomeHeader/>
-  <HomeThreeColumns/>
-  <HomeSimpleSteps/>
-  <HomeAboutUs/>
-  <HomeWhoWeHelp/>
-  <HomeContact/>
-  </>
+  return (
+    <>
+      <HomeHeader/>
+      <HomeThreeColumns/>
+      <HomeSimpleSteps/>
+      <HomeAboutUs/>
+      <HomeWhoWeHelp/>
+      <HomeContact/>
+    </>
+  )
 }
 
 export default Home;

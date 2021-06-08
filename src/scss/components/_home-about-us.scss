@@ -5,20 +5,14 @@
   .aboutUs-info{
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     align-items: center;
     width: 50%;
+    background-color: $light-grey-color;
     h1{
         margin-top: 186px;
         font-size: 38px;
         text-align: center;
         font-weight: bold;
-    }
-    .decoration{
-      background-image: url(../../assets/Decoration.svg);
-      width: 253px;
-      height: 33px;
-      margin-top: 25px;
     }
     h2{
       margin-top: 55px;

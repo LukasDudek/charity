@@ -1,0 +1,65 @@
+.home-who-we-help-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  h1{
+    font-size: 38px;
+    letter-spacing: -0.76px;
+  }
+  .types-of-help-places{
+    display: flex;
+    margin-top: 52px;
+    width: 758px;
+    justify-content: space-around;
+    button{
+      font-size: 24px;
+      background-color: white;
+      width: 208px;
+      height: 79px;
+      border: none;
+      text-align: center;
+      &:hover{
+        border: 0.75px solid $font-color;
+      }
+      &:focus{
+        border: 0.75px solid $font-color;
+      }
+    }
+  }
+  .details-of-places-cont{
+    margin-top: 80px;
+    h2{
+      font-size: 22px;
+      text-align: center;
+    }
+    .list-of-places{
+      margin-top: 66px;
+      .block-place{
+        display: flex;
+        justify-content: space-between;
+        width: 1344px;
+        height: 81px;
+        border-bottom: 0.75px solid $font-color;
+        .info-place{
+          display: flex;
+          flex-direction: column;
+          h1{
+            font-size: 26px;
+          }
+          h2{
+            margin-top: 5px;
+            font-size: 18px;
+          }
+        }
+        .details-place{
+          margin-right: 22px;
+          h2{
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
