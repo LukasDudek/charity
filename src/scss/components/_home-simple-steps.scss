@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   .line-decoration{
     border: 1px solid #707070;
     width: 70px;
@@ -12,11 +13,13 @@
     margin-top: 8px;
     margin-bottom: 8px;
   }
+
   h1{
     font-size: 38px;
     text-align: center;
     letter-spacing: -0.76px;
   }
+
   .steps-container{
     margin-top: 41px;
     display: flex;
@@ -24,18 +27,23 @@
     padding: 75px 0px;
     width: 100%;
     background-color: $light-grey-color;
+
     .t-shirt{
       background-image: url(../../assets/Icon-1.svg);
     }
+
     .bag{
       background-image: url(../../assets/Icon-2.svg);
     }
+
     .loupe{
       background-image: url(../../assets/Icon-3.svg);
     }
+
     .order{
       background-image: url(../../assets/Icon-4.svg);
     }
+
     .step{
       display: flex;
       flex-direction: column;
@@ -43,20 +51,24 @@
       justify-content: center;
       margin-left: 110px;
       margin-right: 110px;
+
       .icon-step{
         width: 83px;
         height: 83px;
       }
+
       h2{
         margin-top: 8px;
         font-size: 18px;
       }
+
       h3{
         font-size: 16px;
         text-align: center;
       }
     }
   }
+
   a{ 
     margin-top: 35px;
     color: $font-color;
@@ -68,6 +80,7 @@
     padding: 13px 51px;
     border: 0.75px solid $font-color;
   }
+  
   a:first-child{
     padding: 13px 93px;
   }

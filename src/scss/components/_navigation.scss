@@ -8,8 +8,10 @@
   margin-top: 37px;
   align-self: flex-end;
   margin-right: 142px;
+
   .login-box{
     text-align:end;
+
     a{
       color: $font-second-color;
       text-decoration: none;
@@ -17,18 +19,22 @@
       font-family: $font-base;
       font-size: 14px;
       padding: 9px 10px;
+
       &:hover{
         border: 0.75px solid $yellow-color;
+
       }
       &:focus{
         border: 0.75px solid $yellow-color;
       }
     }
   }
+  
   .main-navigation-box{
     text-align:center;
     display: flex;
     justify-content: space-between;
+
     a{
       font-family: $font-base;
       color: $font-color;
@@ -36,9 +42,11 @@
       font-size: 18px;
       line-height: 24px;
       padding: 9px 20px;
+
       &:hover{
         border: 0.75px solid $font-color;
       }
+
       &:focus{
         border: 0.75px solid $font-color;
       }
