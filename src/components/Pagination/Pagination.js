@@ -7,12 +7,12 @@ const Pagination = ({postsPerPage, totalPost, paginate}) => {
     pageNumbers.push(i);
   }
 
-  return pageNumbers.length != 1 ? (
+  return pageNumbers.length !== 1 ? (
     <>
       <ul className='pagination'>
         {pageNumbers.map( number => 
           <li key={number}>
-            <a onClick={(e)=> paginate(number, e)} href=''>{number}</a>
+            <button onClick={(e)=> paginate(number, e)} >{number}</button>
           </li>)}
       </ul>
     </> 

@@ -3,7 +3,7 @@ import React from 'react'
 const Associations = ({associations}) => {
 
   return (
-    <ul>
+    <ul className='list-block-place'>
       {associations.map( (association, i) => 
         <li key={i} className='block-place'>
           <div className='info-place'>

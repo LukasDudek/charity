@@ -13,7 +13,7 @@ const HomeWhoWeHelp = () => {
     ...fundationDescription
   });
   const [currentPage, setCurrentPage] = useState(1);
-  const [postPerPage, setPostPerPage] = useState(3);
+  const [postPerPage] = useState(3);
 
   const showFundation = (e) => {
     setCurrentPage(1)

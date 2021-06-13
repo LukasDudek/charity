@@ -20,12 +20,15 @@ code {
 }
 
 @import './components/navigation';
+@import './components/login';
+@import './components/logout';
 @import './components/decoration';
 @import './components/home-header';
 @import './components/home-three-columns';
 @import './components/home-simple-steps';
 @import './components/home-about-us';
 @import './components/home-who-we-help';
+@import './components/associations';
 @import './components/home-contact';
 @import './components/pagination';
 

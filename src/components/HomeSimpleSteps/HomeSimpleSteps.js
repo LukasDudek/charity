@@ -14,25 +14,40 @@ const HomeSimpleSteps = () => {
             <div className='t-shirt icon-step'></div>
             <h2>Wybierz rzeczy</h2>
             <div className='line-decoration'></div>
-            <h3>ubrania, zabawki,<br/> sprzęt i inne</h3>
+            <h3>
+              <span>ubrania, zabawki,</span>
+              <span>sprzęt i inne</span>
+            </h3>
           </div>
           <div className='step'>
             <div className='bag  icon-step'></div>
             <h2>Spakuj je</h2>
             <div className='line-decoration'></div>
-            <h3>skorzystaj z<br/> worków na śmieci</h3>
+            <h3>
+              <span>skorzystaj z</span>
+              <span>worków na śmieci</span>
+            </h3>
           </div>
           <div className='step'>
             <div className='loupe  icon-step'></div>
-            <h2>Zdecyduj komu <br/> chcesz pomóc</h2>
+            <h2>
+              <span>Zdecyduj komu</span>
+              <span>chcesz pomóc</span>
+            </h2>
             <div className='line-decoration'></div>
-            <h3>wybierz zaufane<br/> miejsce</h3>
+            <h3>
+              <span>wybierz zaufane</span>
+              <span>miejsce</span> 
+            </h3>
           </div>
           <div className='step'>
             <div className='order  icon-step'></div>
             <h2>Zamów kuriera</h2>
             <div className='line-decoration'></div>
-            <h3>kurier przyjedzie<br/> w dogodnym terminie</h3>
+            <h3>
+              <span>kurier przyjedzie</span>
+              <span>w dogodnym terminie</span>
+            </h3>
           </div>
         </div>
         <Link to={'/logIn'}> ODDAJ <br/> RZECZY </Link>

@@ -1,0 +1,42 @@
+.list-block-place{
+  font-family: $font-alt;
+
+  li:nth-child(3n){
+    border-bottom: none;
+  }
+  .block-place{
+    display: flex;
+    justify-content: space-between;
+    width: 1344px;
+    height: 101px;
+    border-bottom: 0.75px solid $font-color;
+
+  
+    .info-place{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  
+      h1{
+        font-size: 26px;
+      }
+  
+      h2{
+        font-style: italic;
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        font-size: 18px;
+      }
+    }
+    
+    .details-place{
+      margin-right: 22px;
+      display: flex;
+      align-items: center;
+      h2{
+        font-size: 18px;
+      }
+    }
+  }
+}
