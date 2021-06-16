@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import Decoration from '../Decoration/Decoration';
 
-const HomeHeader = () => {
+const HomeHeader = ({user}) => {
 
   return (
     <>
@@ -14,16 +14,29 @@ const HomeHeader = () => {
             <span>Oddaj niechciane rzeczy w zaufane ręce</span>
           </h1>
           <Decoration />
-          <div className="home-header-links">
-            <Link to={'/login'}>
-              <span>ODDAJ</span>
-              <span>RZECZY</span>
-            </Link>
-            <Link to={'/login'}>
-              <span>ZORGANIZUJ</span>
-              <span>ZBIÓRKĘ</span>
-            </Link>
+          {user ? 
+            <div className="home-header-links">
+              <Link to={'/giveThings'}>
+                <span>ODDAJ</span>
+                <span>RZECZY</span>
+              </Link>
+              <Link to={'/giveThings'}>
+                <span>ZORGANIZUJ</span>
+                <span>ZBIÓRKĘ</span>
+              </Link>
+            </div>
+          :
+            <div className="home-header-links">
+              <Link to={'/login'}>
+                <span>ODDAJ</span>
+                <span>RZECZY</span>
+              </Link>
+              <Link to={'/login'}>
+                <span>ZORGANIZUJ</span>
+                <span>ZBIÓRKĘ</span>
+              </Link>
           </div>
+          }
         </div>
       </div>
     </>

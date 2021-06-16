@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Decoration from '../Decoration'
 import {Link} from "react-router-dom";
+import fire from '../../fire';
 
 const Register = () => {
   const [registerValue, setRegisterValue] = useState(
@@ -10,12 +11,10 @@ const Register = () => {
       password2: ''
     }
   )
-
   const [validateErrMail, setValidateErrMail] = useState('')
   const [validateErrPass, setValidateErrPass] = useState('')
   const [validateErrPass2, setValidateErrPass2] = useState('')
   const [succes, setSucces] = useState('');
-
   const inputRegMail = document.getElementById("inp-reg-mail");
   const inputRegPass = document.getElementById("inp-reg-pass");
   const inputRegPass2 = document.getElementById("inp-reg-pass2");
@@ -24,7 +23,6 @@ const Register = () => {
     e.preventDefault()
 
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
 
     if (!re.test(registerValue.mail)) {
       setValidateErrMail('Nieprawidłowy e-mail.');
@@ -55,9 +53,13 @@ const Register = () => {
 
     if (!re.test(registerValue.mail) || registerValue.password.length < 6 || registerValue.password2.length < 6 || registerValue.password2 !== registerValue.password ) {
       return null;
-    } else 
-      setSucces('Zaresjestrowano');
+    } else {
+      fire
+    .auth()
+    .createUserWithEmailAndPassword(registerValue.mail, registerValue.password)
+    .catch(err => console.log(err))
     }
+  }
 
   return (
     <>

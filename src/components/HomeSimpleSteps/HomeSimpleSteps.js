@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import Decoration from '../Decoration/Decoration'
 
-const HomeSimpleSteps = () => {
+const HomeSimpleSteps = ({user}) => {
 
   return (
     <>
@@ -50,7 +50,12 @@ const HomeSimpleSteps = () => {
             </h3>
           </div>
         </div>
-        <Link to={'/logIn'}> ODDAJ <br/> RZECZY </Link>
+        {user ?
+          <Link to={'/giveThings'}> ODDAJ <br/> RZECZY </Link>
+        :
+          <Link to={'/logIn'}> ODDAJ <br/> RZECZY </Link>
+        }
+        
       </div>
     </>
   )

@@ -6,13 +6,13 @@ import HomeAboutUs from '../HomeAboutUs';
 import HomeWhoWeHelp from '../HomeWhoWeHelp';
 import HomeContact from '../HomeConatct';
 
-const Home = () => {
+const Home = ({user}) => {
   
   return (
     <>
-      <HomeHeader/>
+      <HomeHeader user={user}/>
       <HomeThreeColumns/>
-      <HomeSimpleSteps/>
+      <HomeSimpleSteps user={user}/>
       <HomeAboutUs/>
       <HomeWhoWeHelp/>
       <HomeContact/>
