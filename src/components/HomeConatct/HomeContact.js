@@ -85,12 +85,15 @@ const HomeContact = () => {
               </div>
               <div className='half-name-mail'>
                 <label>Wpisz swój email</label>
-                <input type='email' id='inpMail' placeholder='abc@xyz.pl' onChange={e => setMessage({...message, mail: e.target.value })}></input>
+                <input 
+                  type='email' 
+                  id='inpMail' placeholder='abc@xyz.pl' onChange={e => setMessage({...message, mail: e.target.value })}></input>
                 <h2 className='mail-err'>{validateErrMail}</h2>
               </div>
             </div>
             <label>Wpisz swoją wiadomość</label>
-            <textarea id='inpInf'
+            <textarea 
+              id='inpInf'
               placeholder='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
               onChange={e => setMessage({...message, information: e.target.value })}
             >

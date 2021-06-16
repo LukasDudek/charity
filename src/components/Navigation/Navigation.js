@@ -20,11 +20,11 @@ const Navigation= ({user, mail, handleLogout}) => {
         </div>
           }
         <div className='main-navigation-box'> 
-          <Link to={'/#'}> Start </Link>
-          <HashLink to='/#simple-steps'> O co chodzi? </HashLink>
-          <HashLink to='/#about-us'> O nas </HashLink>
-          <HashLink to={'/#help-places'}> Fundacja i organizacje </HashLink>
-          <HashLink to={'/#contact'}> Kontakt </HashLink>
+          <Link to={'/#'}>Start</Link>
+          <HashLink to='/#simple-steps'>O co chodzi?</HashLink>
+          <HashLink to='/#about-us'>O nas </HashLink>
+          <HashLink to={'/#help-places'}>Fundacja i organizacje</HashLink>
+          <HashLink to={'/#contact'}>Kontakt</HashLink>
         </div>
       </nav>
     </>

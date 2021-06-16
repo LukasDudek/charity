@@ -29,6 +29,10 @@
       &:focus{
         border: 0.75px solid #707070;
       }
+
+      &.active{
+        border: 0.75px solid $font-color;
+      }
     }
   }
 }

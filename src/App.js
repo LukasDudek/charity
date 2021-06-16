@@ -14,12 +14,6 @@ import GiveThings from './components/GiveThings/GiveThings';
 
 function App() {
 const [user, setUser] = useState('');
-// const [loginValue, setLoginValue] = useState(
-//   {
-//     mail: '',
-//     password: ''
-//   }
-// )
 
 const authListener = () => {
   fire.auth().onAuthStateChanged((user) => {
